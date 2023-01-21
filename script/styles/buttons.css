@@ -1,0 +1,66 @@
+.searchbar button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    background: rgb(255, 145, 0);
+    font-size: 17px;
+    border: none;
+    padding-right: 7px; 
+    padding-left: 7px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+.searchbar button:hover {
+    background-color: rgb(139, 67, 0);
+}
+#searchbox {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    font-size: 17px;
+    text-align: right;
+}
+.social button {
+    font-family: Verdana;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+
+}
+.social button {
+    margin-top: 8px;
+    border: none;
+    transition: background-color 1s;
+    float: left;
+}
+#sub {
+    padding: 10px 10px;
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+    border-radius: 0px;
+    margin-left: 8px;
+}
+#sub:hover {
+    background-color: rgb(109, 3, 3);
+}
+#tweet {
+    padding: 10px 10px;
+    background-color: rgb(0, 169, 211);
+    cursor: pointer;
+    border-radius: 0px;
+}
+#tweet:hover {
+    background-color: rgb(1, 37, 136);
+}
+#dis {
+    padding: 10px 10px;
+    background-color: rgb(70, 73, 78);
+    cursor: pointer;
+    border-radius: 0px;
+}
+#dis:hover {
+    background-color: rgb(19, 19, 19);
+}
