@@ -1,3 +1,22 @@
+body {
+    margin: 0px;
+    background-image: url('https://preview.redd.it/52f61nfzmwl51.jpg?auto=webp&s=ea0d396990fbdffe68c214d263810737f9faac6f');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+} 
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #ffe77c;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(197, 95, 0);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(148, 71, 0);
+}
 .searchbar button {
     float: right;
     padding: 6px;
@@ -63,4 +82,20 @@
 }
 #dis:hover {
     background-color: rgb(19, 19, 19);
+}
+#xt {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    position: absolute;
+    top: -5%;
+    right: 40%;
+    cursor: default;
+    font-family: 'Arial', sans-serif;
+    font-size: 50px;
+    color: rgb(214, 139, 0);
+    text-shadow: 2px 5px 10px #eeff00;
+    transition: text-shadow 1s;
+}
+#xt:hover {
+    text-shadow: 2px 5px 10px #f50000;
 }
