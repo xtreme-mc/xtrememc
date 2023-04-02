@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+nav a {
+    margin: 5px;
+    font-family: Arial;
+    font-size: 20px;
+    color: rgb(223, 223, 223);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 header {
     background-color: rgb(58, 58, 58);
     padding: 10px;
@@ -16,10 +29,13 @@ header {
     color: rgb(255, 255, 255);
     padding: 10px 15px;
     border: 0px;
-    border-radius: 10%;
+    border-radius: 10px;
     font-size: 15px;
-    text-decoration: none;
     cursor: pointer;
+}
+
+.social a {
+    text-decoration: none;
 }
 
 #sub {
