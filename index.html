@@ -1,96 +1,91 @@
 <!DOCTYPE html>
 
 <html lang="ar">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Xtreme MC - Home</title>
+  
+  <link rel="icon" href="assets/files/logo.PNG">
+  <link rel="stylesheet" href="assets/main.css">
+  <script src="assets/main.js"></script>
+
+  <style>
+    main {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      padding: 10px;
+      background-image: url('assets/files/intro.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
     
-    <title>Xtreme MC</title>
+    #intro {
+      grid-row: 1 / span 1;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 120px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    #intro h1 {
+      grid-column: 1 / span 1;
+      font-size: 70px;
+      font-family: Arial;
+      color: rgb(241, 157, 0);
+      cursor: default;
+    }
+    #intro p {
+      grid-column: 2 / span 1;
+      font-size: 20px;
+      color: rgb(230, 230, 230);
+      cursor: default;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Xtreme MC</h1>
+
+    <nav>
+      <a>home</a>
+      <a>games</a>
+      <a>news</a>
+      <a>contact</a>
+      <a>about</a>
+    </nav>
     
-    <link rel="icon" href="assets/files/logo.PNG">
-    <link rel="stylesheet" href="assets/main.css">
-    <script src="assets/main.js"></script>
+    <div class="social">
+      <a href="https://www.youtube.com/channel/UCCun9bwltbZahRLqyU2ce3Q" target="new">  
+      <button id="sub">Youtube</button>
+      </a>
 
-    <style>
-      main {
-        background-color: rgb(206, 206, 206);
-        padding: 20px;
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        gap: 20px;
-      }
-      
-      #intro {
-        grid-row: 1 / span 1;
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 20px;
-        background-color: rgb(255, 255, 255);
-        border-radius: 20px;
-        padding: 20px;
-      }
+      <a href="https://twitter.com/Yassine_XT8661" target="new">
+      <button id="tweet">Twitter</button>
+      </a>
 
-      #intro img {
-        width: 150px;
-        height: 150px;
-        border-radius: 10px;
-        grid-column: 1 / span 1;
-      }
+      <a href="https://discord.gg/jccvsn6baM" target="new">
+      <button id="dis">Discord</button>
+      </a>
+    </div>
+  </header>
 
-      #intro p {
-        grid-column: 3 / span 2;
-        font-size: 25px;
-        color: rgb(54, 54, 54);
-        cursor: default;
-      }
-    </style>
-  </head>
+  <main>
+    <section id="intro">
+      <h1>Xtreme MC</h1>
 
-  <body>
-    <header>
-      <h1 id="title">Xtreme MC</h1>
+      <p dir="rtl"> 
+مرحبا، أنا اكستريم إم سي، جيمر وبرمجي ويوتيوبر. احب الألعاب منذ صغري ولعبت العديد منها على مختلف الأجهزة. كبرمجي، لدي خبرة في تطوير التطبيقات باستخدام لغة بايثون. أنا أستمتع بإنشاء ومشاركة محتوى الألعاب على قناتي في اليوتيوب، حيث أقدم مراجعات ولقطات لألعاب مختلفة.
+      </p>
+    </section>
+  </main>
 
-      <nav>
-        <a>home</a>
-        <a>games</a>
-        <a>news</a>
-        <a>contact</a>
-        <a>about</a>
-      </nav>
-      
-      <div class="social">
-        <a href="https://www.youtube.com/channel/UCCun9bwltbZahRLqyU2ce3Q" target="new">  
-        <button id="sub">Youtube</button>
-        </a>
-
-        <a href="https://twitter.com/Yassine_XT8661" target="new">
-        <button id="tweet">Twitter</button>
-        </a>
-
-        <a href="https://discord.gg/jccvsn6baM" target="new">
-        <button id="dis">Discord</button>
-        </a>
-      </div>
-    </header>
-    
-    <main>
-      <section id="intro">
-        <img src="assets/files/logo.PNG" alt="Xtreme MC">
-        <p dir="rtl"> 
-السلام عليكم..
-<br>
-اسمي ياسين انا شخص عادي لا فرق بيني وبينك،
-<br>
-احب الالعاب والبرمجة والحواسيب،
-<br>
-هدفي في القناة اني اقدم محتوى ممتع ومناسب لكم.
-        </p>
-      </section>
-    </main>
-
-    <footer>
-      © 2023 Xtreme MC Studios.
-    </footer>
-  </body>
+  <footer>
+    &copy; 2023 Xtreme MC Studios.
+  </footer>
+</body>
 </html>

@@ -4,36 +4,47 @@
     box-sizing: border-box;
 }
 
-nav a {
-    margin: 5px;
-    font-family: Arial;
-    font-size: 20px;
-    color: rgb(223, 223, 223);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
 header {
     background-color: rgb(58, 58, 58);
-    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+header h1 {
+    margin: 5px 10px;
+    cursor: default;
+    font-family: Arial;
+    font-size: 35px;
+    color: rgb(255, 166, 0);
+}
 
+nav a {
+    padding: 15px 10px;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 20px;
+    color: rgb(223, 223, 223);
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: rgb(107, 107, 107);
+}
+nav a:active {
+    background-color: rgb(75, 75, 75);
+}
+
+.social {
+    padding: 10px;
+}
 .social button {
     color: rgb(255, 255, 255);
+    margin: 1px;
     padding: 10px 15px;
     border: 0px;
     border-radius: 10px;
     font-size: 15px;
     cursor: pointer;
 }
-
 .social a {
     text-decoration: none;
 }
@@ -57,13 +68,6 @@ header {
 } 
 #dis:hover {
     background-color: rgb(25, 25, 54);
-}
-
-#title {
-    cursor: default;
-    font-family: Arial;
-    font-size: 35px;
-    color: rgb(255, 166, 0);
 }
 
 footer {
