@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "name": "Launch localhost",
+            "url": "http://localhost/index.html",
+            "webRoot": "C:/Users/Xtreme MC/xtrememc"
+        }
+    ]
+}

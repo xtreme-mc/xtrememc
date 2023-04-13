@@ -43,6 +43,7 @@ nav a:active {
     border: 0px;
     border-radius: 10px;
     font-size: 15px;
+    font-family: Arial;
     cursor: pointer;
 }
 .social a {

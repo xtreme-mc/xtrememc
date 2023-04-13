@@ -16,7 +16,6 @@
     main {
       display: grid;
       grid-template-rows: repeat(2, 1fr);
-      padding: 10px;
       background-image: url('assets/files/intro.jpg');
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -26,22 +25,38 @@
     #intro {
       grid-row: 1 / span 1;
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      padding: 120px;
+      grid-template-rows: repeat(2, 1fr);
+    }
+    #intro div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .name {
       background-color: rgba(0, 0, 0, 0.5);
     }
+    .about {
+      margin: 20px 40px;
+      background-color: rgb(216, 216, 216);
+      border-radius: 10px;
+    }
+
     #intro h1 {
-      grid-column: 1 / span 1;
+      padding: 70px;
+      grid-row: 1 / span 1;
       font-size: 70px;
       font-family: Arial;
       color: rgb(241, 157, 0);
       cursor: default;
     }
     #intro p {
-      grid-column: 2 / span 1;
-      font-size: 20px;
-      color: rgb(230, 230, 230);
+      padding: 50px;
+      grid-row: 2 / span 1;
+      text-align: center;
+      font-size: 25px;
+      font-family: Arial;
+      color: rgb(29, 29, 29);
       cursor: default;
     }
   </style>
@@ -76,11 +91,30 @@
 
   <main>
     <section id="intro">
-      <h1>Xtreme MC</h1>
-
-      <p dir="rtl"> 
-مرحبا، أنا اكستريم إم سي، جيمر وبرمجي ويوتيوبر. احب الألعاب منذ صغري ولعبت العديد منها على مختلف الأجهزة. كبرمجي، لدي خبرة في تطوير التطبيقات باستخدام لغة بايثون. أنا أستمتع بإنشاء ومشاركة محتوى الألعاب على قناتي في اليوتيوب، حيث أقدم مراجعات ولقطات لألعاب مختلفة.
-      </p>
+      <div class="name">
+        <h1>Xtreme MC</h1>
+      </div>
+      
+      <div class="about">
+        <p dir="rtl"> 
+السلام عليكم..
+اسمي ياسين انا شخص عادي لا فرق بيني وبينك،
+احب الالعاب والبرمجة.
+<br>
+هدفي في القناة اني اقدم محتوى ممتع ومناسب لكم.
+<br><br>
+<b>
+المشتركين:
+</b>
+10 ✔️ |
+25 ❌ |
+50 ❌ |
+100 ❌ |
+250 ❌ |
+500 ❌ |
+1000 ❌
+        </p>
+      </div>
     </section>
   </main>
 
