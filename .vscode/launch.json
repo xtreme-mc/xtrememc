@@ -1,12 +1,12 @@
 {
+    "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch index.html",
             "type": "firefox",
             "request": "launch",
             "reAttach": true,
-            "name": "Launch localhost",
-            "url": "http://localhost/index.html",
-            "webRoot": "C:/Users/Xtreme MC/xtrememc"
+            "file": "${workspaceFolder}/index.html"
         }
     ]
 }

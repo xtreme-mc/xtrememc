@@ -10,18 +10,16 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+header h1, nav {margin: 5px;}
+
 header h1 {
-    margin: 5px;
     cursor: default;
     font-family: Arial;
     font-size: 35px;
     color: orange;
 }
 
-nav {
-    margin: 5px;
-}
-nav a {
+header nav a {
     padding: 15px 10px;
     cursor: pointer;
     font-family: Arial;
@@ -29,13 +27,13 @@ nav a {
     color: white;
     text-decoration: none;
 }
-nav a:hover {
+header nav a:hover {
     background-color: rgb(107, 107, 107);
 }
-nav a:active {
+header nav a:active {
     background-color: rgb(75, 75, 75);
 }
-nav a:focus {
+header nav a:focus {
     background-color: rgb(56, 56, 56);
 }
 
