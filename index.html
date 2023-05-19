@@ -2,17 +2,21 @@
 
 <html lang="ar">
 <head>
+  <!-- metadata -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="موقع العاب للعرب">
   
+  <!-- title of page-->
   <title>Xtreme MC - Home</title>
   
+  <!-- external links -->
   <link rel="icon" href="assets/files/logo.PNG">
   <link rel="stylesheet" href="assets/main.css">
   <script src="assets/main.js"></script>
 
+  <!-- internal style -->
   <style>
     main {
       display: grid;
@@ -22,7 +26,7 @@
       background-attachment: fixed;
       background-size: cover;
     }
-    
+
     #intro {
       grid-row: 1;
       display: grid;
@@ -34,30 +38,35 @@
       justify-content: center;
     }
 
-    .name {background-color: rgba(0, 0, 0, 0.5);}
+    .name {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
     .name h1 {
       padding: 50px;
       grid-row: 1;
       font-size: 70px;
-      font-family: Arial;
       color: orange;
       cursor: default;
     }
     #about {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      grid-row: 2;
       margin: 20px 40px;
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
       background-color: rgb(56, 56, 56);
-      border-radius: 10px;
+      border-radius: 20px;
     }
 
-    #intro p {
-      padding: 30px;
-      grid-row: 2;
+    #about img {
+      grid-column: 1;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    #about p {
+      grid-column: 2 / span 2;
+      padding: 30px 100px;
       text-align: center;
       font-size: 25px;
-      font-family: Arial;
       color: rgb(201, 201, 201);
       cursor: default;
     }
@@ -73,9 +82,11 @@
       grid-template-columns: repeat(3, 1fr);
       padding: 50px;
     }
-    #follow * {padding: 10px;}
+    #follow * {
+      padding: 10px;
+    }
     
-    #follow div {
+    #follow a {
       display: grid;
       grid-template-rows: repeat(2, 1fr);
       margin: 15px;
@@ -83,16 +94,18 @@
       transition: 0.5s background-color;
       border-radius: 10px;
       text-align: center;
+      text-decoration: none;
       cursor: pointer;
     }
-    #follow div a {
+    #follow b {
       grid-row: 1;
       text-decoration: none;
       color: white;
       font-style: bold;
       font-size: 35px;
+      cursor: pointer;
     }
-    #follow div p {
+    #follow p {
       grid-row: 2;
       color: white;
       font-family: Arial;
@@ -100,20 +113,34 @@
       cursor: pointer;
     }
 
-    #yt {grid-column: 1;}
-    #twitter {grid-column: 2;}
-    #discord {grid-column: 3;}
+    #yt {
+      grid-column: 1;
+    }
+    #twitter {
+      grid-column: 2;
+    }
+    #discord {
+      grid-column: 3;
+    }
 
-    #yt:hover {background-color: rgba(255, 0, 0, 0.8);}
-    #twitter:hover {background-color: rgba(0, 255, 255, 0.8);}
-    #discord:hover {background-color: rgba(0, 0, 255, 0.8);}
+    #yt:hover {
+      background-color: rgba(255, 0, 0, 0.8);
+    }
+    #twitter:hover {
+      background-color: rgba(0, 255, 255, 0.8);
+    }
+    #discord:hover {
+      background-color: rgba(0, 0, 255, 0.8);
+    }
   </style>
 </head>
 
 <body>
   <header>
+    <!-- Xtreme MC -->
     <h1>Xtreme MC</h1>
 
+    <!-- navigation -->
     <nav>
       <a>home</a>
       <a>games</a>
@@ -125,48 +152,61 @@
 
   <main>
     <section id="intro">
+      <!-- title of section -->
       <div class="name">
         <h1>Xtreme MC</h1>
       </div>
-      
+    
+      <!-- content -->
       <div id="about">
+        <!-- image 1 -->
+        <img src="assets\files\background.png" alt="Xtreme MC" width="30%">
+
+        <!-- description -->
         <p dir="rtl"> 
-السلام عليكم انا ياسين من تونس ما في فرق بيني وبينك
+السلام عليكم انا ياسين من تونس لاعب ومنشء محتوى
 <br>
-هواياتي الالعاب والبرمجة والمونتاج وكرة القدم.
+هواياتي الالعاب والبرمجة والمونتاج وكرة القدم
 <br>
-هدفي في القناة اني اقدم محتوى ممتع ومناسب لكم.
+هدفي في القناة اني اقدم محتوى ممتع ومناسب لكم
         </p>
-        <iframe width="400" height="250" src="https://www.youtube.com/embed/TdO0RFntA4g" title="لقطات مضحكة بادجار في براول ستارز #1 🙃😂" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <!-- image 2 -->
+        <img src="assets\files\bs.jpg" alt="brawl stars" width="30%">
       </div>
     </section>
 
     <section id="social">
+      <!-- title of section -->
       <div class="name">
         <h1>Follow us</h1>
       </div>
 
+      <!-- content -->
       <div id="follow">
-        <div id="yt">
-          <a href="https://www.youtube.com/channel/UCCun9bwltbZahRLqyU2ce3Q" target="new">Youtube</a>
+        <!-- youtube -->
+        <a id="yt" href="https://www.youtube.com/channel/UCCun9bwltbZahRLqyU2ce3Q" target="new">
+          <b>Youtube</b>
           <p>
-  اشترك في القناة ليصلك كل جديد من المقاطع
+اشترك في القناة ليصلك كل جديد من مقاطعنا
           </p>
-        </div>
+        </a>
 
-        <div id="twitter">
-          <a href="https://twitter.com/Yassine_XT8661" target="new">Twitter</a>
+        <!-- twitter -->
+        <a id="twitter" href="https://twitter.com/Yassine_XT8661" target="new">
+          <b>Twitter</b>
           <p>
-  تابعنا على تويتر لتصلك جميع اخبار القناة
+تابعنا على تويتر لتصلك جميع اخبار القناة
           </p>
-        </div>
-        
-        <div id="discord">
-          <a href="https://discord.gg/jccvsn6baM" target="new">Discord</a>
+        </a>
+      
+      <!-- discord -->
+        <a id="discord" href="https://discord.gg/jccvsn6baM" target="new">
+          <b>Discord</b>
           <p>
-  انضم الينا في سيرفر الديكورد للاستمتاع والبحث عن فرق
+انضم الينا في سيرفر الديكورد للتحدث والفعاليات
           </p>
-        </div>
+        </a>
       </div>
     </section>
   </main>
