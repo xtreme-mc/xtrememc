@@ -1,3 +1,4 @@
+<!-- Xtreme MC -->
 <!DOCTYPE html>
 
 <html lang="ar">
@@ -18,86 +19,77 @@
 
   <!-- internal style -->
   <style>
-    main {
-      display: grid;
-      grid-template-rows: repeat(3, 1fr);
-      background-image: url('assets/files/intro.jpg');
+    body {
+      background-image: url('assets/files/bg.jpg');
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
     }
 
-    #intro {
+    main { /* content of page*/
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    #intro { /* section 1 */
       grid-row: 1;
       display: grid;
       grid-template-rows: repeat(2, 1fr);
     }
-    #intro div, .name {
+    #intro div, .name { /* center elements */
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
-    .name {
+    .name { /* sections title */
       background-color: rgba(0, 0, 0, 0.5);
     }
-    .name h1 {
+    .name h1 { /* titles text */
       padding: 50px;
       grid-row: 1;
       font-size: 70px;
       color: orange;
       cursor: default;
     }
-    #about {
+    #about { /* content of section */
       grid-row: 2;
-      margin: 20px 40px;
-      display: grid;
-      grid-template-columns: 1fr 2fr 1fr;
-      background-color: rgb(56, 56, 56);
+      margin: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #about img { /* images */
+      margin: 10px 30px;
       border-radius: 20px;
     }
 
-    #about img {
-      grid-column: 1;
-      margin: 10px;
-      border-radius: 10px;
-    }
-    #about p {
-      grid-column: 2 / span 2;
-      padding: 30px 100px;
-      text-align: center;
-      font-size: 25px;
-      color: rgb(201, 201, 201);
-      cursor: default;
-    }
-
-    #social {
+    #social { /* section 2 */
       grid-row: 2;
       display: grid;
       grid-template-rows: repeat(2, 1fr);
     }
 
-    #follow {
+    #follow { /* buttons */
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       padding: 50px;
     }
-    #follow * {
-      padding: 10px;
-    }
     
-    #follow a {
+    #follow a { /* buttons links */
       display: grid;
       grid-template-rows: repeat(2, 1fr);
       margin: 15px;
+      padding: 10px;
       background-color: rgba(0, 0, 0, 0.8);
       transition: 0.5s background-color;
-      border-radius: 10px;
+      border-radius: 20px;
       text-align: center;
       text-decoration: none;
       cursor: pointer;
     }
-    #follow b {
+    #follow b { /* labels */
       grid-row: 1;
       text-decoration: none;
       color: white;
@@ -105,7 +97,7 @@
       font-size: 35px;
       cursor: pointer;
     }
-    #follow p {
+    #follow p { /* paragraphs */
       grid-row: 2;
       color: white;
       font-family: Arial;
@@ -113,6 +105,7 @@
       cursor: pointer;
     }
 
+    /* social links */
     #yt {
       grid-column: 1;
     }
@@ -123,6 +116,7 @@
       grid-column: 3;
     }
 
+    /* on hover */
     #yt:hover {
       background-color: rgba(255, 0, 0, 0.8);
     }
@@ -160,19 +154,13 @@
       <!-- content -->
       <div id="about">
         <!-- image 1 -->
-        <img src="assets\files\background.png" alt="Xtreme MC" width="30%">
-
-        <!-- description -->
-        <p dir="rtl"> 
-السلام عليكم انا ياسين من تونس لاعب ومنشء محتوى
-<br>
-هواياتي الالعاب والبرمجة والمونتاج وكرة القدم
-<br>
-هدفي في القناة اني اقدم محتوى ممتع ومناسب لكم
-        </p>
+        <img src="assets/files/mc.png" alt="minecraft" width="30%">
 
         <!-- image 2 -->
-        <img src="assets\files\bs.jpg" alt="brawl stars" width="30%">
+        <img src="assets/files/rl.jpg" alt="rocket league" width="30%">
+
+        <!-- image 3 -->
+        <img src="assets/files/bs.jpg" alt="brawl stars" width="30%">
       </div>
     </section>
 
