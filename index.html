@@ -54,14 +54,10 @@
     }
     #about { /* content of section */
       grid-row: 2;
-      margin: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      margin: 50px;
     }
-
-    #about img { /* images */
-      margin: 10px 30px;
+    #about img { /* image */
+      width: 100%;
       border-radius: 20px;
     }
 
@@ -74,7 +70,7 @@
     #follow { /* buttons */
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      padding: 50px;
+      margin: 50px;
     }
     
     #follow a { /* buttons links */
@@ -126,6 +122,18 @@
     #discord:hover {
       background-color: rgba(0, 0, 255, 0.8);
     }
+
+    /* soon... */
+    #soon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    #soon h1 {
+      font-size: 70px;
+      color: white
+    }
   </style>
 </head>
 
@@ -136,11 +144,11 @@
 
     <!-- navigation -->
     <nav>
-      <a>home</a>
-      <a>games</a>
-      <a>news</a>
-      <a>contact</a>
-      <a>about</a>
+      <a>Home</a>
+      <a>Games</a>
+      <a>News</a>
+      <a>Contact</a>
+      <a>About</a>
     </nav>
   </header>
 
@@ -153,14 +161,8 @@
     
       <!-- content -->
       <div id="about">
-        <!-- image 1 -->
-        <img src="assets/files/mc.png" alt="minecraft" width="30%">
-
-        <!-- image 2 -->
-        <img src="assets/files/rl.jpg" alt="rocket league" width="30%">
-
-        <!-- image 3 -->
-        <img src="assets/files/bs.jpg" alt="brawl stars" width="30%">
+        <!-- image -->
+        <img src="assets/files/games.png" alt="bs, rl, mc">
       </div>
     </section>
 
@@ -196,6 +198,11 @@
           </p>
         </a>
       </div>
+    </section>
+
+    <!-- soon... -->
+    <section id="soon">
+      <h1>Coming soon...</h1>
     </section>
   </main>
 
