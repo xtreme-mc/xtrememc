@@ -16,13 +16,6 @@
 
   <!-- internal style -->
   <style>
-    body {
-      background-image: url('assets/files/bg.jpg');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-    }
-
     main { 
       display: grid;
       grid-template-rows: repeat(3, 1fr);
@@ -40,7 +33,7 @@
     }
 
     .name { 
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgb(57, 0, 0);
     }
     .name h1 { 
       padding: 50px;
@@ -49,11 +42,11 @@
       color: orange;
       cursor: default;
     }
-    #about { 
+    #pic { 
       grid-row: 2;
       margin: 50px;
     }
-    #about img { 
+    #pic img { 
       width: 100%;
       border-radius: 20px;
     }
@@ -135,7 +128,9 @@
 
 <body>
   <header>
-    <h1>Xtreme MC</h1>
+    <div id="title">
+      <span>Xtreme</span> <span>MC</span>
+    </div>
 
     <!-- navigation -->
     <nav>
@@ -150,11 +145,22 @@
   <main>
     <section id="intro">
       <div class="name">
-        <h1>Xtreme MC</h1>
+          <h1>Xtreme MC</h1>
+          <div id="about">
+            <h1>Hi! I'm Yassine<br>And I'm</h1>
+            <br>
+            <li>
+            <p>Gamer</p>
+            <p>Content creator</p>
+            <p>Web developer</p>
+            <p>Graphic designer</p>
+            <p>Software developer</p>
+            </li>
+          </div>
       </div>
     
       <!-- content -->
-      <div id="about">
+      <div id="pic">
         <img src="assets/files/games.png" alt="bs, rl, mc">
       </div>
     </section>
