@@ -6,25 +6,48 @@
     user-select: none;
 }
 
-body {
-    background-color: rgb(12, 0, 57);
+::-webkit-scrollbar {
+    background-color: rgb(50, 50, 50);
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: orange;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(255, 111, 0);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: orangered;
 }
 
 /* header */
 header {
-    padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(40, 40, 40);
 }
 
 #title { 
     cursor: default;
     font-size: 35px;
+    text-decoration: none;
+}
+#a, #b:hover {
     color: orange;
 }
-#title span:hover {
+#b, #a:hover {
     color: yellow;
+}
+#title span {
+    transition: color 0.5s;
 }
 
 header nav a { 
